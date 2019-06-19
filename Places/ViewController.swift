@@ -51,7 +51,6 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  
   @IBAction func showARController(_ sender: Any) {
     mapView = nil
     arViewControoler = ARViewController();
@@ -109,6 +108,7 @@ extension ViewController: CLLocationManagerDelegate{
       }
     }
   }
+
 extension ViewController: ARDataSource {
   func ar(_ arViewController: ARViewController, viewForAnnotation: ARAnnotation) -> ARAnnotationView {
     let annotationView = AnnotationView()

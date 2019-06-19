@@ -23,10 +23,6 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQI-8E-5yI">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3n-Hc-cSp">
-                                <rect key="frame" x="340" y="824" width="54" height="30"/>
-                                <state key="normal" title="Camera"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="labelAccuracy" text="Accuracy Location " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-A0-u9a">
                                 <rect key="frame" x="134" y="824" width="146" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,20 +31,30 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-Yt-L57">
-                                <rect key="frame" x="344" y="771" width="46" height="30"/>
+                                <rect key="frame" x="0.0" y="798" width="126" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.99389520004274046" green="0.95949411271734608" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="sL6-OV-w4h" kind="show" id="cmh-pQ-ROP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xj-ZX-STz">
+                                <rect key="frame" x="288" y="798" width="126" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.99389519999999998" green="0.95949411269999996" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oop-VV-f3m" kind="show" id="zVk-cd-ceh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m3n-Hc-cSp" secondAttribute="bottom" constant="8" symbolic="YES" id="3Ao-zl-LsD"/>
                             <constraint firstItem="LQI-8E-5yI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="G8U-Ie-Q1H"/>
                             <constraint firstItem="LQI-8E-5yI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L9H-ju-tCU"/>
-                            <constraint firstAttribute="trailing" secondItem="m3n-Hc-cSp" secondAttribute="trailing" constant="20" symbolic="YES" id="MFL-5j-IFD"/>
                             <constraint firstAttribute="trailing" secondItem="LQI-8E-5yI" secondAttribute="trailing" id="sJt-Ti-oVK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LQI-8E-5yI" secondAttribute="bottom" id="yiu-yC-Scx"/>
                         </constraints>
@@ -60,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
         <!--View ControllerAR-->
         <scene sceneID="0ed-xR-TsB">
@@ -75,30 +81,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Iu-Eu-RjV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPb-bJ-pli">
-                                <rect key="frame" x="20" y="778" width="66" height="30"/>
+                                <rect key="frame" x="174" y="747" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="systemGreenColor"/>
-                                <state key="normal" title="Add cube">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="systemGreenColor"/>
-                                </state>
+                                <state key="normal" title="Add cube"/>
                                 <connections>
                                     <action selector="addCube:" destination="sL6-OV-w4h" eventType="touchUpInside" id="OTf-Aq-uC1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-fi-fdb">
-                                <rect key="frame" x="326" y="770" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" cocoaTouchSystemColor="systemGreenColor"/>
-                                <state key="normal" title="Add cup">
-                                    <color key="titleColor" cocoaTouchSystemColor="systemBlueColor"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="systemGreenColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="addCup:" destination="sL6-OV-w4h" eventType="touchUpInside" id="mln-oA-L9l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,6 +102,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mL8-w8-SCQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="866.66666666666674" y="134.59821428571428"/>
+        </scene>
+        <!--View Controller Second Location-->
+        <scene sceneID="7jE-Qt-cK9">
+            <objects>
+                <viewController id="oop-VV-f3m" customClass="ViewControllerSecondLocation" customModule="Places" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yHp-So-XKG"/>
+                        <viewControllerLayoutGuide type="bottom" id="hK6-r3-Qfy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aVk-C8-E0e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-Fe-dK5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="345-5B-RIu">
+                                <rect key="frame" x="169" y="751" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="systemGreenColor"/>
+                                <state key="normal" title="Add candle">
+                                    <color key="titleColor" cocoaTouchSystemColor="systemBlueColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="systemGreenColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addCandle:" destination="oop-VV-f3m" eventType="touchUpInside" id="C9c-Ff-75e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="scene" destination="mgI-Fe-dK5" id="376-1f-Ehk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aE-wT-2mN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="-539"/>
         </scene>
     </scenes>
 </document>

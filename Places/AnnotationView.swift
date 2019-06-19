@@ -52,6 +52,7 @@ class AnnotationView: ARAnnotationView {
   
   //2
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    print("okkkk")
     delegate?.didTouch(annotationView: self)
   }
 }

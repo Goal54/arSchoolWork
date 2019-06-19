@@ -14,6 +14,7 @@
 		430F984022B27D3B001F05B6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430F983F22B27D3B001F05B6 /* MapKit.framework */; };
 		430F984222B27D49001F05B6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430F984122B27D48001F05B6 /* CoreMotion.framework */; };
 		4342369422B95FB4007D70A6 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4342369322B95FB4007D70A6 /* Models.scnassets */; };
+		4342369822BA13E2007D70A6 /* ViewControllerSecondLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342369722BA13E2007D70A6 /* ViewControllerSecondLocation.swift */; };
 		43D0BCC922B90D4300A818E3 /* ViewControllerAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D0BCC822B90D4300A818E3 /* ViewControllerAR.swift */; };
 		8F7404471DCDD569009A6F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7404461DCDD569009A6F0B /* AppDelegate.swift */; };
 		8F7404491DCDD569009A6F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7404481DCDD569009A6F0B /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		430F983F22B27D3B001F05B6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		430F984122B27D48001F05B6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		4342369322B95FB4007D70A6 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		4342369722BA13E2007D70A6 /* ViewControllerSecondLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSecondLocation.swift; sourceTree = "<group>"; };
 		43D0BCC822B90D4300A818E3 /* ViewControllerAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAR.swift; sourceTree = "<group>"; };
 		8F7404431DCDD569009A6F0B /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7404461DCDD569009A6F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				8F74044F1DCDD569009A6F0B /* LaunchScreen.storyboard */,
 				8F7404521DCDD569009A6F0B /* Info.plist */,
 				43D0BCC822B90D4300A818E3 /* ViewControllerAR.swift */,
+				4342369722BA13E2007D70A6 /* ViewControllerSecondLocation.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F74046A1DCDD5F5009A6F0B /* ARViewController.swift in Sources */,
+				4342369822BA13E2007D70A6 /* ViewControllerSecondLocation.swift in Sources */,
 				430F982C22AAAF08001F05B6 /* PlaceAnnotation.swift in Sources */,
 				8F7404491DCDD569009A6F0B /* ViewController.swift in Sources */,
 				43D0BCC922B90D4300A818E3 /* ViewControllerAR.swift in Sources */,
